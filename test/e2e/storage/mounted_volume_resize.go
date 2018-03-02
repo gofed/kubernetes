@@ -31,10 +31,9 @@ import (
 	clientset "k8s.io/client-go/kubernetes"
 	"k8s.io/kubernetes/pkg/client/conditions"
 	"k8s.io/kubernetes/test/e2e/framework"
-	"k8s.io/kubernetes/test/e2e/storage/utils"
 )
 
-var _ = utils.SIGDescribe("Mounted volume expand [Feature:ExpandPersistentVolumes] [Slow]", func() {
+var _ = SIGDescribe("Mounted volume expand [Feature:ExpandPersistentVolumes] [Slow]", func() {
 	var (
 		c                 clientset.Interface
 		ns                string
